@@ -1,3 +1,5 @@
+document.write('<br>Test text 1');
+
 let dem;
 dem = document.getElementById('demo');
 if( dem != undefined )
@@ -44,7 +46,6 @@ dem.forEach
     }
 )
 
-document.write('Test text');
 console.log(document.childNodes);
 
 // Finding elements using HTML Object Collections as seen in the list
@@ -55,4 +56,16 @@ console.log(x);
 console.log(x.elements[0]);
 console.log(x.innerText);
 
+document.getElementById('date').innerHTML = Date();
+
+document.write('<br>Test text 2');
+
+document.getElementById('image').src = 'https://source.unsplash.com/480x320/'
+
+document.body.style.outline = '5px dashed #DC143C'
+
+let sum = document.getElementById("btn1");
+sum.setAttribute("onclick", "(document.getElementById('id1')).style.color = 'red'; (this).style.color = 'red'");
+
+console.log(sum.attributes);
 

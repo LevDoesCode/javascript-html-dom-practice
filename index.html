@@ -11,11 +11,25 @@
     <div class="demo-class">Two</div>
     <div class="demo-class">Three</div>
 
-    <form id="frm1" action="/action_page.php">
+    <form id="frm1" action="">
         First name: <input type="text" name="fname" value="Donald"><br>
         Last name: <input type="text" name="lname" value="Duck"><br><br>
-        <input type="submit" value="Submit">
-    </form> 
+        <input id="sumito" type="submit" value="Submit">
+    </form>
+
+    <button id="change" type="button" onclick='document.body.style.outline = "5px dashed blue"'>
+        Click Me!
+    </button>
+
+    <h1 id="id1">My Heading 1</h1>
+
+    <button type="button" id="btn1">
+    Click Me!</button>
+
+    <p id='date'></p>
+    <img id='image'></img>
+
+    <img id="image2" src="https://source.unsplash.com/480x320/" onclick = 'document.body.style.outline = "5px dashed green"'> LOL </img>
 
     <script src="script.js"></script>
 </body>

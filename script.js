@@ -46,3 +46,13 @@ dem.forEach
 
 document.write('Test text');
 console.log(document.childNodes);
+
+// Finding elements using HTML Object Collections as seen in the list
+// https://www.w3schools.com/js/js_htmldom_document.asp
+
+let x = document.forms['frm1'];
+console.log(x);
+console.log(x.elements[0]);
+console.log(x.innerText);
+
+

@@ -42,3 +42,16 @@ buttonLarger.addEventListener("mouseout", function(e){
         myDot.style.borderRadius = "4px";
     }
 })
+
+window.addEventListener("keydown", e => {
+    if(e.key == 'v')
+    {
+        document.body.style.backgroundColor = "black";
+    }
+})
+window.addEventListener("keyup", e => {
+    if(e.key == 'v')
+    {
+        document.body.style.backgroundColor = "initial";
+    }
+})

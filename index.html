@@ -7,6 +7,16 @@
 <body>
     <p id="demo"></p>
 
-    <script src="script.js"></script>
+    <button id="btn">Click here</button>
+
+    <script>
+        window.onload = function(){
+            let btn = document.getElementById("btn");
+            btn.onclick = function(){
+                alert(this.id);
+            }
+        }
+    </script>
+    <script src="script.js"></script>    
 </body>
 </html>

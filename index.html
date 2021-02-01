@@ -8,12 +8,21 @@
     <p id="demo"></p>
 
     <button id="btn">Click here</button>
+    <button id="btn2">Click here too</button>
 
     <script>
         window.onload = function(){
             let btn = document.getElementById("btn");
             btn.onclick = function(){
                 alert(this.id);
+            }
+            let btn2 = document.getElementById("btn2");
+            btn2.onclick = function(){
+                try{
+                    b + alert(this.id);
+                }
+                catch(ex)
+                {}
             }
         }
     </script>

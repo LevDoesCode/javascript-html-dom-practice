@@ -15,10 +15,30 @@ function whichButton(e){
 }
 button.addEventListener("mousedown", whichButton);
 
-window.addEventListener("click", function(e){
+window.addEventListener("mousemove", function(e){
     let dot = document.createElement("div");
     dot.className = "dot lol";
     dot.style.left = (e.pageX - 4)  + "px";
     dot.style.top = (e.pageY - 4) + "px";
-    document.body.appendChild(dot);
+    if(e.pageY - 4 > 50)
+        document.body.appendChild(dot);
+})
+
+let buttonLarger = document.getElementById("larger");
+buttonLarger.addEventListener("mouseover", function(e){
+    let dot = document.getElementsByClassName("dot");
+    for(let myDot of dot){
+        myDot.style.height = "16px";
+        myDot.style.width = "16px";
+        myDot.style.borderRadius = "8px";
+    }
+})
+
+buttonLarger.addEventListener("mouseout", function(e){
+    let dot = document.getElementsByClassName("dot");
+    for(let myDot of dot){
+        myDot.style.height = "8px";
+        myDot.style.width = "8px";
+        myDot.style.borderRadius = "4px";
+    }
 })
